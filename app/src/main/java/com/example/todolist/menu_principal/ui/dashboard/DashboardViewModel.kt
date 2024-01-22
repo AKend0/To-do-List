@@ -1,4 +1,4 @@
-package com.example.todolist.dashboard.ui.dashboard
+package com.example.todolist.menu_principal.ui.dashboard
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
