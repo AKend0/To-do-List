@@ -36,7 +36,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/rounded_edittext_background"
-        android:hint="Ingresa correo"
+        android:hint="Ingresa Nombre de usuario"
         android:inputType="textEmailAddress"
         android:paddingHorizontal="8dp"
         android:textColor="@color/white"
@@ -45,21 +45,47 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
+        android:id="@+id/tvmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mail"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUserSignUp"
+        android:layout_marginTop="32dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etMail"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvmail"
+        android:layout_marginTop="16dp"
+        android:hint="Ingresa Contraseña"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/colorHint"
+        android:background="@drawable/rounded_edittext_background"/>
+
+
+    <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:text="Password"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etUserSignUp" />
+        app:layout_constraintTop_toBottomOf="@+id/etMail"
+        android:layout_marginTop="32dp"/>
 
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/etPasswordSignup"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/rounded_edittext_background"
         android:hint="Ingresa Contraseña"
         android:inputType="textPassword"
@@ -83,7 +109,7 @@
         android:id="@+id/etConfirmPasswordSignup"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/rounded_edittext_background"
         android:hint="Ingresa Contraseña"
         android:inputType="textPassword"
